@@ -4,6 +4,7 @@ import { Image } from '@chakra-ui/react'
 import illustration1 from '../Assets/media/illustration1.png'
 import Buttons from './Buttons'
 
+
 const HeroSection = () => {
   return (
     <div>
@@ -15,16 +16,24 @@ const HeroSection = () => {
               xl: 'row',
               base: 'column',
             }}> 
-      <Box px='10'mt='10' alignItems='center' w='100%' >
-        <Text fontSize='3xl' fontWeight='bold'>
+      <Box px='10'mt='10' pt='20' alignItems='center' w='100%' >
+        <Text fontSize='3xl' fontWeight='bold'align={{ base: 'center', md:'left', lg:'left'}}>
           All your files in one secure location, accessible anywhere.
         </Text>
-        <Text fontSize='1xl' alignItems='center' fontWeight='semibold'> Flyo stores your most important files in one   secure location. Access  them wherever you need, share and   collaborate with friends, family and co-workers.
+        <Text fontSize='1xl' align={{ base: 'center', md:'left', lg:'left'}} fontWeight='semibold'> Flyo stores your most important files in one   secure location. Access  them wherever you need, share and   collaborate with friends, family and co-workers.
         </Text>
-        <Box display='flex' mt='8'>
-          <Input bg='white' color='black' w='40%' mr='5' placeholder='Enter your email' />          
-          <Buttons
-          width='40%'
+        <Box display='flex' mt='8'
+        flexDirection={{
+         sm: 'column',
+         md: 'row',
+         lg: 'row',
+         xl: 'row',
+         base: 'column',
+        }}>
+          <Input bg='white' color='black' width={{ base: '100%', md:'60%', lg:'60%',}} mr='2' mb='5' placeholder='Enter your email' />          
+          <Buttons 
+
+          width={{ base: '100%', md:'40%', lg:'40%',}}
           height='40%'        
           Text='Get Started'
           padding='3'

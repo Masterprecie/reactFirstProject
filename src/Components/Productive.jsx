@@ -21,10 +21,10 @@ const Productive = () => {
           base: 'column',
         }}>  
       <Box px='10'mt='50' alignItems='center'>
-          <Text fontSize='3xl' fontWeight='bold'>
+          <Text fontSize='3xl' fontWeight='bold' align={{ base: 'center', md:'left', lg:'left'}}>
             Stay Productive wherever you are
           </Text>
-          <Text fontSize='1xl' alignItems='center' fontWeight='semibold'> Never let location be an issue when accessing your files. Flyo has you <br /> covered for all of your file storage needs. <br /> <br /> Securely share files and folders with friends, family and colleagues for <br /> live collaborate. No email attachment required!
+          <Text fontSize='1xl' alignItems='center' fontWeight='semibold' align={{ base: 'center', md:'left', lg:'left'}}> Never let location be an issue when accessing your files. Flyo has you covered for all of your file storage needs. Securely share files and folders with friends, family and colleagues for live collaborate. No email attachment required!
           </Text>
           <Flex alignItems='center'>
             <Text as='u' fontSize='1xl' fontWeight='semibold' >
@@ -39,8 +39,8 @@ const Productive = () => {
               Flyo has improved our team productivity by an order of magnitude. Since makingthe switch, our team has become a well-oiled collaboration machine.
             </Text>
             <Box display='flex'alignItems='center' mt={5}>
-              <Box w='100%'>
-                <Image borderRadius='50%' src={testimonial}/>
+              <Box>
+                <Image w="80%" borderRadius='50%' src={testimonial}/>
               </Box>
               <Box w='100% '>
                 <Text fontWeight='bold'>

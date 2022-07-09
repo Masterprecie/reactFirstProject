@@ -14,7 +14,7 @@ const HeroSection = () => {
               md: 'column',
               lg: 'row',
               xl: 'row',
-              base: 'column',
+              base: 'column-reverse',
             }}> 
       <Box px='10'mt='10' pt='20' alignItems='center' w='100%' >
         <Text fontSize='3xl' fontWeight='bold'align={{ base: 'center', md:'left', lg:'left'}}>

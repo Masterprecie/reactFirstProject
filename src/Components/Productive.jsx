@@ -1,9 +1,10 @@
-import { VStack, Text, Flex, Stack, Image, Spacer, Icon,Link, Box } from '@chakra-ui/react'
+import { Text, Flex, Image, Spacer, Icon,Link, Box } from '@chakra-ui/react'
 import React from 'react'
 import bgCurveDesktop from '../Assets/media/bgCurveDesktop.png'
 import illustration2 from '../Assets/media/illustration2.png'
 import testimonial from '../Assets/media/testimonial.jpg'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
+import iconQuotes from '../Assets/media/iconQuotes.png'
 
 
 const Productive = () => {
@@ -20,13 +21,18 @@ const Productive = () => {
           xl: 'row',
           base: 'column',
         }}>  
-      <Box px='10'mt='50' alignItems='center'>
-          <Text fontSize='3xl' fontWeight='bold' align={{ base: 'center', md:'left', lg:'left'}}>
+      <Box px='10'mt='50' align='left'>
+          <Text mb='4' fontSize={{ base: '20', md:'3xl', lg:'3xl'}} fontWeight='bold' align={{ base: 'center', md:'left', lg:'left'}}>
             Stay Productive wherever you are
           </Text>
-          <Text fontSize='1xl' alignItems='center' fontWeight='semibold' align={{ base: 'center', md:'left', lg:'left'}}> Never let location be an issue when accessing your files. Flyo has you covered for all of your file storage needs. Securely share files and folders with friends, family and colleagues for live collaborate. No email attachment required!
+          <Text mb='4' fontSize='1xl' alignItems='center' fontWeight='semibold' align={{ base: 'left', md:'left', lg:'left'}}> Never let location be an issue when accessing your files. Flyo has you covered for all of your file storage needs.
           </Text>
-          <Flex alignItems='center'>
+
+          <Text mb='4' fontSize='1xl' alignItems='center' fontWeight='semibold' align={{ base: 'left', md:'left', lg:'left'}}>
+           Securely share files and folders with friends, family and colleagues for live collaborate. No email attachment required!
+           </Text>
+          
+          <Flex justify='center'>
             <Text as='u' fontSize='1xl' fontWeight='semibold' >
               <Link color='teal.400' href='#'>
                  See How Flyo works
@@ -36,6 +42,7 @@ const Productive = () => {
           </Flex>
           <Box w='100% 'p='6' mt='4' boxShadow='lg' rounded='md' bg='white' >
             <Text>
+              <Image mb='4' src={iconQuotes}/>
               Flyo has improved our team productivity by an order of magnitude. Since makingthe switch, our team has become a well-oiled collaboration machine.
             </Text>
             <Box display='flex'alignItems='center' mt={5}>
